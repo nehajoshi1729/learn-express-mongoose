@@ -35,6 +35,12 @@ app.get('/home', (req, res) => {
   Home.show_home(res);
 })
 
+
+app.get('/homeaInfo', (req, res) => {
+  Home.show_homeInfo(res);
+})
+
+
 app.get('/available', (req, res) => {
   BooksStatus.show_all_books_status(res);
 })
